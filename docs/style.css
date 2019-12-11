@@ -1,0 +1,449 @@
+/* My color palette: #3B00E9 - Ultramarine, #F8FA90 - Pastel Yellow, #25CED1 - Dark Turquoise, #FDE8E9 - Misty Rose, #2B061E - Middle Red Purple 
+#FFFFFF - White
+#000000 - Black */
+/* Fonts: 'Montserrat', source-sans-pro, sans-serif, 'Times New Roman', Times, serif, "Brush Script MT", Cambria, Cochin, Georgia  */
+body {
+    min-width: 100%;
+    font-family: 'Montserrat', source-sans-pro, sans-serif, 'Times New Roman', Times, serif, "Brush Script MT";
+}
+/* Header of all page */
+header {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+#logo {
+    float: left;
+    width: 30%;
+    height: 10vh;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 3%;
+}
+/* Links in header */
+#home{
+    float: left;
+    width: 52%;
+    text-align: right;
+	padding-top: 30px;
+    padding-bottom: 10px;
+}
+#signin {
+	float: left;
+    width: 12%;
+    text-align: right;
+	padding-top: 30px;
+    padding-bottom: 10px;
+    margin-right: 3%;
+}
+#signin a:link, #signin a:visited, #home a:link, #home a:visited {
+    text-decoration: none;
+    vertical-align: center;
+	color: rgba(146,146,146,1.00);
+    font-size: 14px;
+}
+#signin a:hover, #home a:hover {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: gray;
+}
+/* Navigation Bar */
+.mainNav{
+    clear: both;
+}
+.mainNav >ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.975);
+}
+.mainNav li {
+    float: left;
+    border-right: 1px solid #bbb;
+    width: 19.9%;
+}
+.mainNav li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.mainNav li>a:hover:not(.active) {
+    background-color: #111;
+}
+.mainNav .active {
+    background-color: #25CED1;
+    color: #2B061E;
+    font-weight: bold;
+}
+/* Drop down Menu for small screens only */
+.dropbtn {
+    background-color: rgba(51, 51, 51, 0.975);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+    width: 100%;
+    margin: 5px auto 5px auto;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: black; color: white;}
+.dropdown-content .active {background-color: #25CED1; color: #2B061E; font-weight: bold;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: black;}
+/* index page content 1 */
+#hero-image {
+    font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
+    clear: both;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(image/colorful-oil-painting-multi-colors-abstract-background-texture_89729-695-2_1210_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: rgba(146,146,146,1.00);
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+#hero-text h1 {
+    color: black;
+    font-size: 50px;
+    font-family: "Brush Script MT";
+    text-align: center;
+    letter-spacing: 2px;
+}
+#hero-text a:link, a:visited {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 70%;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background-color: #FEFEFE;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+}
+#hero-text a:hover{
+    background-color: #2B061E;
+    color: #FDE8E9;
+    border: 0.07vw solid #FDE8E9;
+}
+/* index page content 2 */
+.content{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.content h1, .content h2 {
+    color: rgb(58, 10, 41);
+}
+.content h4 {
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
+.content #bannerImage img{
+	max-width: 100%;
+}
+.content p {
+	color: rgba(146,146,146,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+    text-align: justify;
+    padding-top: 20px;
+}
+/* index page content 3 */
+#quotes {
+    background-color: rgba(248, 250, 144, 0.623);
+    border-radius: 10px;
+    border: 1px darkslategrey;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+#quotes h2,  #quotes p {
+	color: darkslategrey;
+    padding-left: 2%;
+    padding-top: 0%;
+}
+#quotes p {
+	color: darkslategrey;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+/* Acrylic painting page */
+#acry-main {
+    font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
+    clear: both;
+    width: 100%;
+	padding-top: 5%;
+}
+/* page title */
+#acry-main #acry-text h1 {
+    color: #2B061E;
+    font-size: 45px;
+    font-family: "Brush Script MT";
+    letter-spacing: 2px;
+    padding-left: 5%;
+    margin: 0%;
+}
+/* page content */
+#acrycontent{
+    width: 80%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif, Times, 'Times New Roman', serif;
+}
+#acrycontent h2, #acrycontent h4 {
+    color: rgb(58, 10, 41);
+}
+#acrycontent h4 {
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+}
+#acrycontent .bannerImage1 img, #acrycontent .bannerImage2 img{
+    max-width: 100%;
+}
+#acrycontent .details1, #acrycontent .details2{
+    padding: 2%;
+    border-bottom: 1px solid black;
+}
+#acrycontent .details1 p, #acrycontent .details2 p {
+	color: rgba(146,146,146,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+    text-align: justify;
+}
+
+/* Pencil drawing page */
+#pen-main {
+    font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
+    clear: both;
+    width: 100%;
+	padding-top: 5%;
+}
+/* page title */
+#pen-main #pen-text h1 {
+    color: #2B061E;
+    font-size: 45px;
+    font-family:
+     "Brush Script MT";
+    letter-spacing: 2px;
+    padding-left: 5%;
+    margin: 0%;
+    padding-bottom: 5px;
+}
+/* page content */
+#pencontent{
+    width: 80%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+#pencontent h3 {
+    color: rgb(58, 10, 41);
+}
+#pencontent .bannerImage1 img, #pencontent .bannerImage2 img, #pencontent .bannerImage3 img, #pencontent .bannerImage4 img {
+    max-width: 100%;
+}
+#pencontent .details1, #pencontent .details2, #pencontent .details3, #pencontent .details4 {
+    padding: 3%;
+}
+
+/* footer for index page */
+footer {
+    background-color: #FFFFFF;
+    margin-top: 25px;
+}
+#footer_banner {
+	background-color: #2B061E;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+	background-repeat: repeat;
+}
+#footer_banner p {
+    color: mistyrose;
+    text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
+}
+#footer_banner input{
+    font-family: source-sans-pro, sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    color: #2B061E;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid mistyrose;
+	color: mistyrose;
+}
+.button:hover {
+	background-color: #FEFEFE;
+	color: #2B061E;
+	cursor: pointer;
+}
+
+/* footer for other pages */
+.secfooter_banner {    
+    font-family: source-sans-pro, sans-serif;
+	background-color: #2B061E;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+	background-repeat: repeat;
+}
+.secfooter_banner p {
+    color: mistyrose;
+    text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.secfooter_banner a{
+    text-decoration: none;
+}
+.secfooter_banner a:link:not(.active), .secfooter_banner a:hover:not(.active), .secfooter_banner a:visited:not(.active) {
+    color: white;
+}
+.secfooter_banner .active {
+    color: #25CED1;
+    font-weight: bold;
+}
+
+/* form styling */
+#formmain{
+    clear: both;
+}
+#formmain h2{
+    text-align: center;
+    padding: 14px 16px;
+    color: mistyrose;
+    background-color: #2B061E;
+    letter-spacing: 2px;
+    margin: 0%;
+}
+form{
+    width: 100%;
+    margin: auto;
+}
+fieldset {
+    width: 70%;
+    margin: 1% 14% 3% 14%;
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    float: left;
+    background-color:white;
+}
+legend{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    background-color:rgba(253, 253, 253, 0.685);
+    border: 1px solid black;  
+}
+.required{
+    color: red;
+}
+input[type=text], input[type=email], input[type=date],input[type=time], input[type=submit], input[type=reset]{
+    padding:7px;
+    border-radius:5px;
+    border:1px solid #cbcbcb;
+    font-size:14px;
+}
+textarea{
+    padding:7px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border-radius:5px;
+    border:1px solid #cbcbcb;
+    font-size:14px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Common for all pages */
+.copyright{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.center{
+    text-align: center;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event Generator</title>
+    <link rel="icon" type="image/png" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+    <div id="mainWrapper">
+        <header>
+            <div id="logo"><img src="image/UPDATE1209LOGO.svg" alt="Logo of this website" title="The logo of the website."></div>
+            <div id="home"><a href="index.html" title="home">HOME</a></div>
+            <div id="signin"><a href="index.html#footer_banner" title="Subscribe">SUBSCRIBE</a></div>
+        </header>
+        <!-- <hr> -->
+        <section id="formmain">
+            <div class="center"><h2>Event Registration</h2></div><br /><br />
+            <form action="/" method="post" >
+                <fieldset>
+                    <legend>Event Details:</legend><br />
+                    <span class="required">*</span> indicates a required field<br /><br />
+
+                    <div class="col-25 smallHide" >Title<span class="required">*</span></div> 
+                        <div class="col-75 smallWidth"><input type="text" name="title" id="title" placeholder="Event Title" maxlength="100" required="required"></div>
+
+                    <div class="col-25 smallHide"><label for="description">Description<span class="required">*</span></label></div>
+                        <div class="col-75 smallWidth"><textarea rows="5" cols="50" id="description" placeholder="Description of the event" required="required" ></textarea></div>
+
+                    <div class="col-25 smallHide">Location </div>
+                        <div class="col-75 smallWidth"><input type="text" name="location" id="location" placeholder="Location" size="40" maxlength="100" ></div>
+                    <hr>
+
+                    <div class="col-25">All Day</div>
+                        <div class="col-75"><input type="radio" name="allday" id="yes" value="Yes" /><label for="yes">Yes</label>
+                        <input type="radio" name="allday" id="no" value="No" checked="checked" /><label for="no">No</label><br /></div>
+
+                    <div class="col-25">Date/Time from<span class="required">*</span></div> 
+                        <div class="col-75"><input type="date" name="startdate" placeholder="Start Date" required="required">&nbsp;&nbsp;&nbsp;
+                        <input type="time" name="starttime" placeholder="Start Time" required="required"><br /></div>
+
+                    <div class="col-25">Date/Time to<span class="required">*</span></div> 
+                        <div class="col-75"><input type="date" name="enddate" placeholder="End Date" required="required">&nbsp;&nbsp;&nbsp;
+                        <input type="time" name="endtime" placeholder="End Time" required="required"><br /></div>
+                    <hr>
+                        
+                    <div class="col-25">Repeat</div>
+                        <div class="col-75"><input type="radio" name="repeat" id="YES" value="Yes" /><label for="yes">Yes</label>
+                        <input type="radio" name="repeat" id="NO" value="No" checked="checked" /><label for="no">No</label><br /></div>
+
+                    <div class="col-25">Frequency</div>
+                        <div class="col-75"><input type="radio" name="frequency" id="daily" value="daily" /><label for="daily">Daily</label>
+                        <input type="radio" name="frequency" id="weekly" value="weekly" /><label for="weekly">Weekly</label>
+                        <input type="radio" name="frequency" id="monthly" value="monthly" /><label for="monthly">Monthly</label>
+                        <input type="radio" name="frequency" id="yearly" value="yearly" /><label for="yearly">Yearly</label><br /></div>
+
+                    <div class="col-25">Until </div><div class="col-75"><input type="date" name="until" placeholder="Repeat Until Date" ></div>
+                </fieldset>
+                <fieldset>
+                    <legend>If Any, Event Host:</legend><br />
+
+                    <div class="col-25 smallHide">Person hosting this event</div> 
+                        <div class="col-75 smallWidth"><input type="text" name="hostname" placeholder="Host's Name" size="30" maxlength="50" ></div>
+
+                    <div class="col-25 smallHide">Contact number</div>
+                        <div class="col-75 smallWidth"><input type="text" name="number" placeholder="Contact number" size="15" maxlength="10" ></div>
+
+                    <div class="col-25 smallHide">Email</div> 
+                        <div class="col-75 smallWidth"><input type="email" name="email" placeholder="E-mail" size="30" maxlength="100" ></div>
+
+                    <div class="col-25">Upload the list of people to invite</div>
+                        <div class="col-75"><input type="file" name="inivitelist" /></div>
+                    <div class="col-25 col-75"><p style="color: grey;">Upload word file or PDF.</p></div><br /><br />
+
+                    <div class="col-25 col-75"><input type="submit" value="Create Event" />
+                    <input type="reset" value="Reset"></div>
+                </fieldset>     
+            </form>
+        </section>
+        <footer>
+            <div class="secfooter_banner" style="align-items: center; clear: both;">
+                <p>Menu</p><br /><br />
+                <p><a href= "index.html">Home</a></p>
+                <p><a href= "acrylic_watercolor_paintings.html">Acrylic and Watercolor Paintings</a></p>
+                <p><a href= "pencil_paintings.html">Pencil Drawings</a></p>
+                <p><a href= "crayons_sketchpen_paintings.html">Crayon and Sketch-pen Paintings</a></p>
+                <p><a href= "other_creativity.html">Other Creativity</a></p>
+                <p><a href= "about.html">About</a></p>
+                <p><a href= "index.html#footer_banner" title="Subscribe">SUBSCRIBE</a></p>
+            </div>
+            <div class="copyright">&copy; - 2019 CreativeLife.com - <a href= "EventGenerator.html" target="_self" style="text-decoration: none;">Event Generator</a></div>
+        </footer>
+    </div>
+</body>
+</html>
